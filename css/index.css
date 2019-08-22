@@ -1,3 +1,444 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
 
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+	height: 100%;
+	/* width: 100%; */
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+body{
+	width: 80%;
+	margin: auto;
+}
+
+nav { 
+	display: flex;
+	list-style: none;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 20px;
+	color: darkgray;
+}
+
+a{
+	text-decoration: none;
+	color: darkgray;
+}
+header{
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	text-align: center;
+	margin-top: 60px;
+	margin-bottom: 60px;
+}
+
+h1{
+	font-size: 80px;
+}
+
+h3{
+	font-size: 20px;
+}
+
+
+.featureAboutBlock{
+	display:flex;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.middle-img {
+	width: 100%;
+}
+
+.bottom{
+	display:flex;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.Services{
+	margin-right: 15px;
+}
+
+.Product{
+	margin-right: 15px;
+}
+
+.contact{
+	margin-top: 30px;
+}
+
+footer{
+	text-align:center;
+	margin-top:80px;
+}
+
+.services-header-img{
+	width: 100%;
+	margin: 25px 0px;
+}
+
+.servicesServicePage{
+	margin: 20px 0px;
+	line-height: 1.2;
+}
+
+main div{
+	border: 1px solid black;
+	background: #f1eeee;
+	width: 48%;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding: 15px;
+	line-height: 1.2;
+}
+
+main{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: stretch;
+}
+
+main div p {
+	font-weight: bold;
+}
+.learn{
+	border: 1px black solid;
+	padding: 10px 30px;
+	margin-top: 25px;
+	width: 140px;
+	border-radius: 5px;
+	font-size: 12px;
+	text-align: center;
+	background: #ffffff;
+}
+
+.hrThick{
+	height: 3px;
+	background: black;
+	margin-bottom: 10px;
+	margin-top: 20px;
+}
+
+.h2SomeFacts{
+	display:flex;
+}
+.bottomFactsPlusImage{
+	display:flex;
+	width: 100%;
+	margin: 0px;
+	justify-content: space-between;
+}
+
+.amazingList{
+	display:flex;
+}
+.services-info-img{
+	width: 48%;
+	display: flex;
+	margin-top: 30px;
+	
+}
+
+h2{
+	font-weight: bold;
+}
+
+.hrThin{
+	background: black;
+	margin-bottom: 20px;
+	margin-top: 35px;
+}
+
+.amazingList{
+	display:flex;
+	flex-direction: column;
+	margin-left: 20px;
+	margin-top: 20px;
+	
+}
+
+.bottomLeftWords{
+	width: 45%;
+	margin-top: 30px;
+	margin-bottom: 10px;
+}
+.left-block{
+
+}
+.getStarted{
+    border: 1px solid black;
+    padding: 8px;
+    width: 170px;
+    text-align: center;
+    margin-left: 75px;
+}
+
+.logotop{
+    display: none;
+}
+
+.Features{
+    margin-right: 20px
+}
+
+.mobileHR{
+    display:none;
+}
+    
+@media(max-width: 768px) {
+
+
+
+    .header-img{
+        display: none;
+    }
+    .navFlexTop{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .logotop{
+        display: flex;
+        margin-right: 200px;
+        margin-left: 200px;
+        margin-bottom: 35px;
+    }
+
+    .navFlexTop li{
+        margin: 0px 22px 0px 10px;
+    }
+    .logo{
+        display: none;
+    }
+
+    .middle-img{
+        height: 20%;
+        width: 100%;
+    }
+
+
+
+
+
+
+
+
+
+    .Features{
+      
+        font-size: 80%;
+    }
+    .About{
+       
+        font-size: 80%;
+    }
+  
+    h3{
+        font-size: 90%;
+    }
+
+    .bottom{
+        font-size: 80%;
+    
+    }
+    .contact{
+        font-size: 80%;
+    }
+
+    .getStarted{
+        font-size: 85%;
+        margin-right: 60px;
+        margin-left: 60px;
+        width: 55%;
+        height: 30px;
+        
+    }
+
+    h1{
+        font-size: 400%;
+        text-align: center;
+    }
+
+    footer{
+        font-size: 80%;
+    }
+
+
+
+
+
+
+
+
+
+    }
+
+    @media(max-width: 500px) {
+
+
+
+        .header-img{
+            display: none;
+        }
+        .navFlexTop{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .logotop{
+            display: flex;
+            margin-right: 200px;
+            margin-left: 200px;
+            margin-bottom: 15px;
+        }
+    
+        .navFlexTop li{
+            margin: 6px 200px 6px 200px;
+           
+            
+        }
+        .logo{
+            display: none;
+        }
+    
+        .middle-img{
+            height: 15%;
+            width: 100%;
+        }
+    
+        .mobileHR{
+            display: flex;
+            width: 100%;
+        }
+        .featureAboutBlock{
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .Features{
+            margin-top: 20px;
+            margin-bottom: 40px;
+            font-size: 80%;
+        }
+        .About{
+            margin-bottom: 20px;
+            font-size: 80%;
+        }
+      
+        h3{
+            font-size: 90%;
+        }
+
+        .bottom{
+            font-size: 80%;
+            display:flex;
+            flex-wrap: wrap;
+        }
+        .contact{
+            font-size: 80%;
+        }
+
+        .Services{
+            margin-bottom: 40px;
+        }
+
+        .Product{
+            margin-bottom: 40px;
+        }
+
+
+        .getStarted{
+            font-size: 80%;
+            margin-right: 60px;
+            margin-left: 60px;
+        }
+
+        h1{
+            font-size: 400%;
+            text-align: center;
+        }
+        
+        footer{
+            font-size: 80%;
+        }
+    
+        
+        }
